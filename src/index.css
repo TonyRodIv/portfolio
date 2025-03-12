@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+:root {
+  font-family: 'Onest', sans-serif;
+  /* color-scheme: light dark; */
+  color: #323232;
+  background-color: #FFF3E8;
+  /* background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*9Olhb7i9TDcOIjtiJLshHw.jpeg'); */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 50px;
+}
+
+@theme {
+  --color-cream: #FFF3E8;
+  --color-aquaT:#3F6F6D;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
