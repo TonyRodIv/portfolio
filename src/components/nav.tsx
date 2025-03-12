@@ -5,7 +5,7 @@ export default function Nav() {
         <ul className="flex flex-row gap-8">
             <li className="flex items-center"><a className="text-lg" href="#about">Sobre</a></li>
             <li className="flex items-center"><a className="text-lg" href="#projects">Projetos</a></li>
-            <li className="flex items-center"><a href="#contact"><button className="bg-aquaT rounded-2xl py-1.5 px-8 text-gray-50 font-medium text-xl
+            <li className="flex items-center"><a href="#contact"><button className="bg-aquaT rounded-2xl py-1.5 px-8 text-gray-50 font-medium text-lg
 ">Contate-me</button></a></li>
         </ul>
     </nav>
