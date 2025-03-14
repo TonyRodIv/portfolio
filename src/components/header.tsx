@@ -1,6 +1,6 @@
 export default function Header() {
     return(
-        <main>
+        <main className="w-full h-[90vh] flex justify-center items-center">
             <section>
                 {/* <img src="" alt="" /> */}
                 <div>
