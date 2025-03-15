@@ -1,18 +1,21 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
 :root {
-  font-family: 'Onest', sans-serif;
+  font-family: 'Onest';
   /* color-scheme: light dark; */
   color: #323232;
   background-color: #FFF3E8;
   /* background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*9Olhb7i9TDcOIjtiJLshHw.jpeg'); */
-
+  background-image: url('./assets/img/background.png');
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 50px;
+  padding: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
 }
 
 @theme {
@@ -27,3 +30,85 @@
     background-color: #ffffff;
   }
 }
+
+.textHead{
+  width:95%;
+  max-width:880px;
+}
+.header{
+  margin:0 auto;
+  width:90%;
+  max-width: 1300px;
+}
+
+@media only screen and (min-width: 670px){
+  nav {
+    position: sticky;
+    width: 90%;
+    max-width: 1300px;
+    height: 80px;
+    top: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 16px; 
+    padding: 0 16px;
+    box-shadow: 2px 6px 100px rgba(152, 152, 152, 0.25); 
+    backdrop-filter: blur(10px); 
+}
+  .navIndicatorRight {
+    display: none;
+  }
+  
+
+  .titleHead{
+    font-size:clamp(2.5rem, 8vw, 95px);
+    line-height: clamp(2.5rem, 8vw, 110px);
+  }
+}
+
+/* Estilo para dispositivos móveis */
+@media only screen and (max-width: 670px) {
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: left;
+    padding: 0 16px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    flex-grow: 1;
+    text-align: center; 
+  }
+
+  button {
+    display: none;
+  }
+
+  .navTitle {
+    display: none;
+  }	
+
+  .titleHead{
+    font-size:6vh;
+    line-height: 55px;
+  }
+}
+
