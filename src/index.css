@@ -61,11 +61,14 @@
     display: none;
   }
   
-
   .titleHead{
     font-size:clamp(2.5rem, 8vw, 95px);
     line-height: clamp(2.5rem, 8vw, 110px);
   }
+  .textHead{
+    font-size:clamp(1.5rem, 2vw, 22px);
+  }
+
 }
 
 /* Estilo para dispositivos móveis */
@@ -109,6 +112,10 @@
   .titleHead{
     font-size:6vh;
     line-height: 55px;
+  }
+
+  .textHead{
+    font-size:clamp(1.2rem, 2vw, 20px);
   }
 }
 
