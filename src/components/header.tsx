@@ -1,13 +1,13 @@
 export default function Header() {
     return (
-        <main className="header h-[90vh] flex flex-col justify-center items-center relative">
+        <main className="header h-[90vh] flex flex-col justify-center items-right relative">
             <section className="flex items-center gap-4">
                 <img src="https://github.com/TonyRodIv/portfolio/blob/main/public/pfpG.png?raw=true" className="rounded-full min-w-[60px] w-[15vw] max-w-[90px]" alt="" />
                 <div>
                     <h3>Antony Rodrigues</h3>
-                    <div>
-                        {/* <a href="http://"><img src="" alt="" srcset="" /></a> */}
-                        {/* <a href="http://"><img src="" alt="" srcset="" /></a> */}
+                    <div className="flex gap-2">
+                        <a href="https://github.com/TonyRodIv"><img src="https://github.com/TonyRodIv/portfolio/blob/main/src/assets/icons/github.png?raw=true" alt=""  /></a>
+                        <a href="https://www.linkedin.com/in/Tonyrodiv/"><img src="https://github.com/TonyRodIv/portfolio/blob/main/src/assets/icons/linkedin.png?raw=true" alt="" /></a>
                     </div>
                 </div>
             </section>
