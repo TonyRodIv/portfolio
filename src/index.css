@@ -72,6 +72,9 @@
   .textMedium{
     font-size:clamp(1.5rem, 2vw, 24px);
   }
+  .btnBig{
+    padding: 1rem 3.2rem;
+  }
 
 }
 
@@ -105,8 +108,11 @@
     text-align: center; 
   }
 
-  button {
+  .btnSmall {
     display: none;
+  }
+  .btnBig{
+    padding: 0.75rem 2.5rem;
   }
 
   .navTitle {

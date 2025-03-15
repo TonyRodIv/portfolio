@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <main className="header h-[90vh] flex flex-col justify-center items-right relative">
+        <main className="header h-[90vh] flex flex-col justify-center items-right relative gap-5">
             <section className="flex items-center gap-4">
                 <img src="https://github.com/TonyRodIv/portfolio/blob/main/public/pfpG.png?raw=true" className="rounded-full min-w-[60px] w-[15vw] max-w-[90px]" alt="" />
                 <div>
@@ -18,7 +18,7 @@ export default function Header() {
                 <p className="textSmall font-medium text-[#323232cc]">
                     In a quaint little town, nestled between rolling hills, there lived a curious cat named Whiskers. Every day Whiskers would embark on new adventures, exploring the vibrant gardens and meeting friendly neighbors. One sunny afternoon.
                 </p>
-                <li className="flex items-center"><a href="#contact"><button className="bg-aquaT rounded-2xl py-1.5 px-8 text-gray-50 font-medium text-lg">Contate-me</button></a></li>
+                <a href="#contact"><button className="btnBig bg-aquaT rounded-full text-gray-50 textMedium">Contate-me</button></a>
             </main>
             {/* <img src="https://github.com/TonyRodIv/portfolio/blob/main/public/backgroundPLUS.png?raw=true" className="opacity-[40%] bottom-20 right-0 absolute" alt="" /> */}
         </main>
