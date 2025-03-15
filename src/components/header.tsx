@@ -1,8 +1,8 @@
 export default function Header() {
     return (
         <main className="header h-[90vh] flex flex-col justify-center items-center relative">
-            <section>
-                <img src="" alt="" />
+            <section className="flex items-center gap-4">
+                <img src="https://github.com/TonyRodIv/portfolio/blob/main/public/pfpG.png?raw=true" className="rounded-full min-w-[60px] w-[15vw] max-w-[90px]" alt="" />
                 <div>
                     <h3>Antony Rodrigues</h3>
                     <div>
