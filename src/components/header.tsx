@@ -20,7 +20,7 @@ export default function Header() {
                 </p>
                 <li className="flex items-center"><a href="#contact"><button className="bg-aquaT rounded-2xl py-1.5 px-8 text-gray-50 font-medium text-lg">Contate-me</button></a></li>
             </main>
-            <img src="/backgroundPLUS.png" className="bottom-20 -right-20 absolute" alt="" />
+            <img src="https://github.com/TonyRodIv/portfolio/blob/main/public/backgroundPLUS.png?raw=true" className="bottom-20 -right-20 absolute" alt="" />
         </main>
     )
 }
