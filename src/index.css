@@ -39,7 +39,6 @@
   margin:0 auto;
   width:90%;
   max-width: 1300px;
-  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 670px){
@@ -47,8 +46,8 @@
     position: sticky;
     width: 90%;
     max-width: 1300px;
-    height: 80px;
-    top: 20px;
+    height: 4rem;
+    top: 1rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; 
@@ -58,23 +57,28 @@
     box-shadow: 2px 6px 100px rgba(152, 152, 152, 0.25); 
     backdrop-filter: blur(10px); 
     z-index: 1000;
-}
+  }
+
+  .header{
+    padding-top: 6vh;
+  }
+
   .navIndicatorRight {
     display: none;
   }
   
   .titleHead{
-    font-size:clamp(2.5rem, 8vw, 95px);
-    line-height: clamp(2.5rem, 8vw, 110px);
+    font-size:clamp(2.4rem, 7.5vw, 5.4rem);
+    line-height: clamp(2.5rem, 8vw, 6rem);
   }
   .textSmall{
-    font-size:clamp(1.5rem, 2vw, 22px);
+    font-size:clamp(0.8rem, 2vw, 1.2rem);
   }
   .textMedium{
-    font-size:clamp(1.5rem, 2vw, 24px);
+    font-size:clamp(1rem, 2vw, 1.3rem);
   }
   .btnBig{
-    padding: 1rem 3.2rem;
+    padding: 1rem 3rem;
   }
 
 }
@@ -86,14 +90,18 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     justify-content: end;
     align-items: left;
     padding: 0 1rem;
-    padding-bottom: 1rem;
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+  }
+
+  .header{
+    padding-top: 2.5vh;
+    margin-bottom: 2.5vh;
   }
 
   ul {
@@ -126,8 +134,8 @@
   }
 
   .titleHead{
-    font-size:clamp(1.9rem, 12vw, 4rem);
-    line-height: clamp(1.6rem, 13vw, 110px);
+    font-size:clamp(1.9rem, 11.5vw, 3.8rem);
+    line-height: clamp(1.6rem, 11.4vw, 110px);
   }
 
   .textSmall{

@@ -1,8 +1,8 @@
 export default function Header() {
     return (
-        <main className="header h-[90vh] flex flex-col justify-center items-right relative gap-5">
+        <main className="header h-[95vh] flex flex-col items-right relative gap-5">
             <section className="flex items-center gap-4">
-                <img src="https://github.com/TonyRodIv/portfolio/blob/main/public/pfpG.png?raw=true" className="rounded-full min-w-[60px] w-[15vw] max-w-[90px]" alt="" />
+                <img src="https://github.com/TonyRodIv/portfolio/blob/main/public/pfpG.png?raw=true" className="rounded-full min-w-[3.75rem] w-[15vw] max-w-[4.6rem]" alt="" />
                 <div>
                     <h3 className="textMedium">Antony Rodrigues</h3>
                     <div className="flex gap-2">
