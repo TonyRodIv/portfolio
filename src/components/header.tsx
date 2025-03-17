@@ -13,7 +13,8 @@ export default function Header() {
             </section>
             <main className="flex flex-col items-left gap-4">
                 <h1 className="titleHead font-bold text-[#323232]">
-                    Desenvolvo aplicações e transformo suas ideias em soluções digitais
+                    {/* Desenvolvo aplicações e transformo suas ideias em soluções digitais */}
+                    Desenvolvo aplicações que Cativam, Convertem e Elevam Sua Marca.
                 </h1>
                 <p className="textSmall font-medium text-[#323232cc]">
                     In a quaint little town, nestled between rolling hills, there lived a curious cat named Whiskers. Every day Whiskers would embark on new adventures, exploring the vibrant gardens and meeting friendly neighbors. One sunny afternoon.
