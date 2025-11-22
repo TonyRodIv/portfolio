@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import Nav from './components/nav.tsx'
 import Header from './components/header.tsx'
 import Carousel from './components/carousel.tsx'
+import Footer from './components/footer.tsx'
 
 import './index.css'
 
@@ -11,5 +12,6 @@ createRoot(document.getElementById('root')!).render(
     <Nav /> 
     <Header />
     <Carousel />
+    <Footer />
   </StrictMode>,
 )

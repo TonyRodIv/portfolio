@@ -1,145 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  font-family: 'Onest';
-  /* color-scheme: light dark; */
+  font-family: 'Onest', sans-serif;
   color: #323232;
   background-color: #FFF3E8;
-  /* background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*9Olhb7i9TDcOIjtiJLshHw.jpeg'); */
-  background-image: url('./assets/img/background.png');
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 20px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
 }
 
 @theme {
   --color-cream: #FFF3E8;
-  --color-aquaT:#3F6F6D;
+  --color-aquaT: #3F6F6D;
 }
 
+/* Utilitários de Scroll */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+/* Animações Globais */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
-.textSmall{
-  width:95%;
-  max-width:880px;
-}
-.header{
-  margin:0 auto;
-  width:90%;
-  max-width: 1300px;
-}
-
-@media only screen and (min-width: 670px){
-  nav {
-    position: sticky;
-    width: 90%;
-    max-width: 1300px;
-    height: 4rem;
-    top: 1rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    border-radius: 16px; 
-    padding: 0 16px;
-    box-shadow: 2px 6px 100px rgba(152, 152, 152, 0.25); 
-    backdrop-filter: blur(10px); 
-    z-index: 1000;
-  }
-
-  .header{
-    padding-top: 6vh;
-  }
-
-  .navIndicatorRight {
-    display: none;
-  }
-  
-  .titleHead{
-    font-size:clamp(2.4rem, 7.5vw, 5.4rem);
-    line-height: clamp(2.5rem, 8vw, 6rem);
-  }
-  .textSmall{
-    font-size:clamp(0.8rem, 2vw, 1.2rem);
-  }
-  .textMedium{
-    font-size:clamp(1rem, 2vw, 1.3rem);
-  }
-  .btnBig{
-    padding: 1rem 3rem;
-  }
-
-}
-
-/* Estilo para dispositivos móveis */
-@media only screen and (max-width: 670px) {
-  nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: end;
-    align-items: left;
-    padding: 0 1rem;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-  }
-
-  .header{
-    padding-top: 2.5vh;
-    margin-bottom: 2.5vh;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    gap: 16px; 
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  li {
-    flex-grow: 1;
-    text-align: center; 
-  }
-
-  .btnSmall {
-    display: none;
-  }
-  .btnBig{
-    padding: 0.75rem 2.5rem;
-  }
-
-  .navTitle {
-    display: none;
-  }	
-
-  .textMedium{
-    font-size:clamp(1.3rem, 2vw, 1.5rem);
-  }
-
-  .titleHead{
-    font-size:clamp(1.9rem, 11.5vw, 3.8rem);
-    line-height: clamp(1.6rem, 11.4vw, 110px);
-  }
-
-  .textSmall{
-    font-size:clamp(1.1rem, 2vw, 1.25rem);
-  }
-}
-
+.animate-fade-up { animation: fadeUp 0.6s ease-out forwards; }
+.animate-scale-in { animation: scaleIn 0.5s ease-out forwards; }
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
